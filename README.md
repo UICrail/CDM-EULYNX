@@ -8,7 +8,12 @@ The transformation was performed using the UMLtoOWL conversion tool hosted on [G
 
 The original EULYNX DP documentation still applies.
 
-No attempts were made to make EDP (as OWL) more "semantic" than EDP (as UML). In particular, no attempt was made to conflate properties bearing the same name and having similar meanings into one property. Any further "semantization" would require competencies in signalling engineering, beyond CDM engineering.
+# Warnings
+
+* The OWL version of EULYNX DP 1.2 is delivered "as is" for the purpose of demonstating CDM integration, with no guarantee for adequacy in real signalling design or operations contexts. Users (esp. signalling engineers) are welcome to experiment it and challenge its shortcomings.
+* No attempts were made to make EDP (as OWL) more "semantic" than EDP (as UML). In particular, no attempt was made to conflate properties bearing the same name and having similar meanings into one property. Any further "semantization" would require competencies in signalling engineering that are beyond MOTIONAL WP30 project capabilities and remit.
+* Do not listen to the "EULYNX Dataprep is obsolete" talks. While EULYNX DP is not currently maintained, it is recent, and signalling concepts (e.g. those concerning class B systems) will probably remain valid for a longer time than any technical system.
+* Do not trust derived models, especially when the derivation is untraceable, undocumented, and (heaven forbid) in breach of licensing terms. The level of detail of the original EULYNX DP documentation has yet to be matched.
 
 # Transformation rules
 

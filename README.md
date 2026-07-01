@@ -19,7 +19,7 @@ These two steps are detailed below.
 
 # UML to OWL — common transformation rules
 
-This document describes the **canonical** conversion performed by the `umltoowl` package: Enterprise Architect–oriented UML 2 XMI is read, normalized into an internal model, then emitted as per-package Turtle graphs (OWL 2 DL–oriented T-Box). The implementation lives mainly in `umltoowl/parse_ea.py`, `umltoowl/model.py`, `umltoowl/emit.py`, `umltoowl/naming.py`, and `umltoowl/api.py`.
+This section describes the **canonical** conversion performed by the `umltoowl` package: Enterprise Architect–oriented UML 2 XMI is read, normalized into an internal model, then emitted as per-package Turtle graphs (OWL 2 DL–oriented T-Box). The implementation lives mainly in `umltoowl/parse_ea.py`, `umltoowl/model.py`, `umltoowl/emit.py`, `umltoowl/naming.py`, and `umltoowl/api.py`.
 
 The transformation is **lossy** and carries **no provenance** from UML to OWL (each ontology document is annotated accordingly in Turtle).
 
@@ -248,7 +248,7 @@ The canonical TTL from this document may be fed to the **EDP post-processor** ([
 
 # EDP post-processing rules
 
-This document describes rules implemented in `umltoowl/edp_post_process.py`. They apply to **Turtle files already produced** by the canonical converter (see [`uml-to-owl-transformation-common.md`](uml-to-owl-transformation-common.md)), typically under `out/EDP`. Outputs are written to a separate directory (default `out/EDP/PP`); source TTL files are **not** modified.
+This section describes rules implemented in `umltoowl/edp_post_process.py`. They apply to **Turtle files already produced** by the canonical converter (see [`uml-to-owl-transformation-common.md`](uml-to-owl-transformation-common.md)), typically under `out/EDP`. Outputs are written to a separate directory (default `out/EDP/PP`); source TTL files are **not** modified.
 
 Input Turtle may already declare `owl:FunctionalProperty`, `owl:InverseFunctionalProperty`, `owl:ObjectProperty`, and `owl:Restriction` axioms from T9/T10. Post-processing **preserves** those types when it rewrites triples (for example Rule 2 keeps `owl:FunctionalProperty` when promoting a datatype property to an object property where the substitution row requires it).
 

@@ -12,8 +12,8 @@ The original EULYNX DP documentation still applies.
 
 The transformation was performed in two steps:
 
-* rule-based UML to OWL translation
-* post-processing
+* Rule-based UML to OWL translation. The translation is generic.
+* Post-processing. The post-processing is specific to EULYNX. Its main goal is to replace the original references of EDP to RSM 1.2 (UML version) by references to Semantic RSM (OWL version).
 
 These two steps are detailed below.
 

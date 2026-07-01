@@ -1,6 +1,6 @@
 # Contents
 
-This repository contains a translation, into OWL, of the EULYNX DataPrep model, version 1.2
+This repository contains a translation, into OWL, of the EULYNX DataPrep model, version 1.2 (short: EDP).
 
 The original version can be found on [the EULYNX original website](https://eulynx.eu/resource-hub-dataprep-model/).
 
@@ -8,13 +8,16 @@ The transformation was performed using the UMLtoOWL conversion tool hosted on [G
 
 The original EULYNX DP documentation still applies.
 
+No attempts were made to make EDP (as OWL) more "semantic" than EDP (as UML). In particular, no attempt was made to conflate properties bearing the same name and having similar meanings into one property. Any further "semantization" would require competencies in signalling engineering, beyond CDM engineering.
+
 # Transformation rules
 
 The transformation was performed in two steps:
 
 * Rule-based UML to OWL translation. The translation is generic.
-* Post-processing. The post-processing is specific to EULYNX. Its main goal is to replace the original references of EDP to RSM 1.2 (UML version) by references to Semantic RSM (OWL version).
-
+* Post-processing. The post-processing is specific to EULYNX. Its main goals are
+  * to replace the original references of EDP to RSM 1.2 (UML version) by references to Semantic RSM (OWL version).
+  * to remove artefacts that are specific to the original UML tool (Enterprise Architect)
 These two steps are detailed below.
 
 # UML to OWL — common transformation rules

@@ -20,6 +20,12 @@ The transformation was performed in two steps:
   * to remove artefacts that are specific to the original UML tool (Enterprise Architect)
 These two steps are detailed below.
 
+The output is displayed here as a single (merged) ontology, which is unreasonably big for practical usage and maintenance, but easier to inspect.
+
+The original transformation however delivers linkes ontologies reflecting the original UML packaging.
+
+In both cases, the namespaces reflect the original UML packaging.
+
 # UML to OWL — common transformation rules
 
 This section describes the **canonical** conversion performed by the `umltoowl` package: Enterprise Architect–oriented UML 2 XMI is read, normalized into an internal model, then emitted as per-package Turtle graphs (OWL 2 DL–oriented T-Box). The implementation lives mainly in `umltoowl/parse_ea.py`, `umltoowl/model.py`, `umltoowl/emit.py`, `umltoowl/naming.py`, and `umltoowl/api.py`.

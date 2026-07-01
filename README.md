@@ -4,7 +4,7 @@ This repository contains a translation, into OWL, of the EULYNX DataPrep model, 
 
 The original version can be found on [the EULYNX original website](https://eulynx.eu/resource-hub-dataprep-model/).
 
-The transformation was performed using the UMLtoOWL conversion tool hosted on [GitHub](https://github.com/Airy59/UMLtoOWL). That repository is not public; please contact the owner if interested.
+The transformation was performed using the UMLtoOWL conversion tool hosted on [GitHub](https://github.com/Airy59/UMLtoOWL). That repository is not public; please contact the owner if interested. Part of its documentation is copied below.
 
 The original EULYNX DP documentation still applies.
 

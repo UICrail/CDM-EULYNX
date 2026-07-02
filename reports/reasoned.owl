@@ -42,15 +42,9 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#maxQualifiedCardinality -->
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxQualifiedCardinality"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -65,9 +59,9 @@
     
 
 
-    <!-- file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl -->
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
-    <owl:ObjectProperty rdf:about="file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
     
 
 
@@ -2443,7 +2437,6 @@
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#refersToRsmNavigability_PositionedRelationSet -->
 
     <owl:ObjectProperty rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#refersToRsmNavigability_PositionedRelationSet">
-        <rdfs:subPropertyOf rdf:resource="file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl"/>
         <rdfs:domain rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#PositionedRelationSet"/>
         <rdfs:range rdf:resource="https://cdm.ovh/rsm/topology/topo#Navigability"/>
     </owl:ObjectProperty>
@@ -2453,7 +2446,6 @@
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#refersToRsmNavigability_TerminalElement -->
 
     <owl:ObjectProperty rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#refersToRsmNavigability_TerminalElement">
-        <rdfs:subPropertyOf rdf:resource="file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#TerminalElement"/>
         <rdfs:range rdf:resource="https://cdm.ovh/rsm/topology/topo#Navigability"/>
@@ -8332,7 +8324,6 @@
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#refersToRsmCrossing -->
 
     <owl:ObjectProperty rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#refersToRsmCrossing">
-        <rdfs:subPropertyOf rdf:resource="file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#Crossing"/>
         <rdfs:range rdf:resource="https://cdm.ovh/rsm/track/trfn#Crossing"/>
@@ -8343,7 +8334,6 @@
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#refersToRsmTurnout -->
 
     <owl:ObjectProperty rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#refersToRsmTurnout">
-        <rdfs:subPropertyOf rdf:resource="file:/home/runner/work/CDM-EULYNX/CDM-EULYNX/calling-repo/ontology/src/edp.ttl"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Signalling/Assets/Point_crossing_derailer#PointBlades"/>
         <rdfs:range rdf:resource="https://cdm.ovh/rsm/track/trfn#Turnout"/>
@@ -22109,9 +22099,9 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -22527,7 +22517,6 @@ The name is a string that consists of 20 characters, ISO IEC 8859-1:1998 left ju
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideDetectionEvaluator -->
 
     <owl:Class rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideDetectionEvaluator">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideInstallation"/>
         <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideSpotSystem"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22574,9 +22563,6 @@ The name is a string that consists of 20 characters, ISO IEC 8859-1:1998 left ju
         <owl:disjointWith rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#ReferenceDrawing"/>
         <owl:disjointWith rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#Segment"/>
         <owl:disjointWith rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#View"/>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideSpotSystem"/>
-        </owl:disjointUnionOf>
         <rdfs:comment>Technical line-side installation relevant to, but not planned by signalling.</rdfs:comment>
         <rdfs:label>LineSideInstallation</rdfs:label>
     </owl:Class>
@@ -22597,7 +22583,7 @@ The construction has either a linear- or an area-location.</rdfs:comment>
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideSpotSystem -->
 
     <owl:Class rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideSpotSystem">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#ConfiguredBaseObject"/>
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideInstallation"/>
         <rdfs:comment>Facade for spot-located devices such as hot axle box detector, telecom antenna, catenary post, track lubricator.</rdfs:comment>
         <rdfs:label>LineSideSpotSystem</rdfs:label>
     </owl:Class>
@@ -22985,7 +22971,6 @@ de-DE: sonstige; bei Auswahl des Werts &apos;sonstige&apos; ist eine Profilzeich
     <!-- https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#TrackLubricator -->
 
     <owl:Class rdf:about="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#TrackLubricator">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideInstallation"/>
         <rdfs:subClassOf rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Common#LineSideSpotSystem"/>
         <rdfs:label>TrackLubricator</rdfs:label>
     </owl:Class>
@@ -24235,6 +24220,13 @@ The number of trains per hour for which this line is designed.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#atPort"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://cdm.ovh/rsm/topology/topo#Port"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cdm.ovh/edp/EULYNX_DataPrep/Generic/Geo_information#atPort"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://cdm.ovh/rsm/topology/topo#Port"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -51716,9 +51708,6 @@ Given with respect to the topological application direction that is associated w
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:label>AlarmTypes</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
-    </rdf:Description>
 </rdf:RDF>
 
 
